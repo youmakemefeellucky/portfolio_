@@ -1,0 +1,537 @@
+@font-face {
+    font-family: 'sporting_grotesquebold';
+    src: url('fonts/sportinggrotesque-bold-webfont.eot');
+    src: url('fonts/sportinggrotesque-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sportinggrotesque-bold-webfont.woff2') format('woff2'),
+         url('fonts/sportinggrotesque-bold-webfont.woff') format('woff'),
+         url('fonts/sportinggrotesque-bold-webfont.ttf') format('truetype'),
+         url('fonts/sportinggrotesque-bold-webfont.svg#sporting_grotesquebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sporting_grotesqueregular';
+    src: url('fonts/sportinggrotesque-regular-webfont.eot');
+    src: url('fonts/sportinggrotesque-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sportinggrotesque-regular-webfont.woff2') format('woff2'),
+         url('fonts/sportinggrotesque-regular-webfont.woff') format('woff'),
+         url('fonts/sportinggrotesque-regular-webfont.ttf') format('truetype'),
+         url('fonts/sportinggrotesque-regular-webfont.svg#sporting_grotesqueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'happy_times_at_the_ikobitalic';
+    src: url('fonts/happy-times-at-the-ikob_italic-webfont.woff2') format('woff2'),
+         url('fonts/happy-times-at-the-ikob_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'happy_times_at_the_ikobRg';
+    src: url('fonts/happy-times-at-the-ikob-webfont.woff2') format('woff2'),
+         url('fonts/happy-times-at-the-ikob-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+  user-select: none;
+  background-color: white;
+  padding: 0;
+  cursor: url('img/cursor_blue.png'), auto;
+}
+
+@media only screen and (max-width: 414px) {
+  html, body {
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+  }
+}
+
+
+
+
+h1 {
+  font-family: 'sporting_grotesquebold', Helvetica, sans-serif;;
+  z-index: 1;
+  position: absolute;
+  margin: 14rem 4rem 4rem 6rem;
+  color: #FFD232;
+  font-size: 3rem;
+  line-height: 5rem;
+  mix-blend-mode: difference;
+}
+
+@media only screen and (max-width: 414px) {
+  h1 {
+    width: 90vw;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 14rem 0 4rem 0;
+    padding: 0 1rem 0 1rem;
+  }
+}
+
+h2 {
+  font-family: 'happy_times_at_the_ikobRg', monospace;
+  font-size: 3.75rem;
+}
+
+@media only screen and (max-width: 414px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+h3, h4, a {
+  font-family: 'sporting_grotesqueregular', Helvetica, sans-serif;
+}
+
+h3 {
+  position: relative;
+  color: #002DCD;
+  font-size: 2rem;
+  display: inline-block;
+  margin: 22rem 2rem 0 20rem;
+}
+
+@media only screen and (max-width: 414px) {
+  h3 {
+    color: #002DCD;
+    font-size: 1.5rem;
+    margin: 12rem 2rem 0 2rem;
+  }
+}
+
+h4 {
+  position: relative;
+  color: #002DCD;
+  font-size: 1.375rem;
+  margin: 8rem 5rem 2rem 20rem;
+}
+
+@media only screen and (max-width: 414px) {
+  h4 {
+    font-size: 1.1rem;
+    margin: 6rem 2rem 1rem 2rem;
+  }
+}
+
+h6 {
+  position: relative;
+  font-family: 'Rubik', Helvetica, sans-serif;
+  font-size: 1.125rem;
+  margin: 2rem 5rem 2rem 20rem;
+}
+
+@media only screen and (max-width: 414px) {
+  h6 {
+    font-size: 1rem;
+    margin: 1rem 2rem 1rem 2rem;
+  }
+}
+
+a {
+  font-size: 2rem;
+  text-align: right;
+  z-index: 10;
+  padding: 1rem;
+}
+
+a:hover {
+  cursor: url('img/cursor_yellow.png'), auto;
+}
+
+@media only screen and (max-width: 414px) {
+  a {
+    font-size: 1.5rem;
+  }
+}
+
+#wrapper {
+  z-index: -10;
+  position: absolute;
+  width: 100vw;
+  height: 130vh;                /* change later*/
+  background-color: white;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+
+@media only screen and (max-width: 414px) {
+  #wrapper {
+    height: 110vh;
+  }
+}
+
+#CV {
+  display: none;
+  width: 100vw;
+  padding-bottom: 10rem;
+  overflow: hidden;
+  background-image: url('img/stroke3.png');
+  background-color: white;
+  background-repeat: no-repeat;
+  margin: -8px -8px -8px -8px;
+}
+
+@media only screen and (max-width: 414px) {
+  #CV {
+    background-image: none;
+  }
+}
+
+#exitCV {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+#exitCV:hover {
+  cursor: url('img/cursor_yellow.png'), auto;
+}
+
+@media only screen and (max-width: 414px) {
+  #exitCV {
+    transform: scale(0.5);
+    top: 0.2rem;
+    right: 0;
+  }
+}
+
+#profile {
+  position: absolute;
+  width: 10rem;
+  margin: 7.5rem 0 0 7rem;
+}
+
+@media only screen and (max-width: 414px) {
+  #profile {
+    width: 6rem;
+    margin: 3rem 0 0 2rem;
+  }
+}
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 15%;
+  color: #636363;
+}
+
+.right {
+  width: 85%;
+}
+
+.row {
+  margin-left: 20rem;
+}
+
+@media only screen and (max-width: 414px) {
+  .row {
+    margin-left: 2rem;
+  }
+}
+
+.row div {
+  font-family: 'Rubik', Helvetica, sans-serif;
+  font-size: 1.125rem;
+}
+
+@media only screen and (max-width: 414px) {
+  .row div {
+    font-size: 0.9rem;
+  }
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#shadow {
+  z-index: -2;
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  margin: 25rem auto auto 25rem;
+  position: absolute;
+  background-color: black;
+  animation: shadow 3s ease-in-out Infinite Alternate;
+}
+
+@media only screen and (max-width: 414px) {
+  #shadow {
+    margin: 20rem 0 0 12rem;
+  }
+}
+
+@keyframes shadow {
+  0% {
+  }
+  100% {
+    background-color: white;
+    box-shadow: 2.5rem -0.625rem 1.25rem 0 black;
+  }
+}
+
+#square {
+  display: inline-block;
+  z-index: -1;
+  margin : 31.25rem 0 0 56.25rem;
+  position: absolute;
+  width: 18.75rem;
+  height: 18.75rem;
+  transform: rotate(30deg);
+  background-color: black;
+}
+
+@media only screen and (max-width: 414px) {
+  #square {
+    display: none;
+  }
+}
+
+#ball {
+  position: absolute;
+  margin: 0 0 0 12.5rem;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #000;
+  animation: ball 1s ease-in Infinite Alternate;
+}
+
+@media only screen and (max-width: 414px) {
+  #ball {
+    margin: 0 0 0 1rem;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@keyframes ball {
+    0% {
+        top: 0;
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+    95% {
+        height: 6.25rem;
+        width: 6.25rem;
+    }
+    to {
+        top: 21.875rem;
+        width: 7.18rem;
+        height: 5.625rem;
+    }
+}
+
+#cvButton {
+    position: fixed;
+    float: right;
+    top: 2rem;
+    right: 2rem;
+}
+
+@media only screen and (max-width: 414px) {
+  #cvButton {
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+#contactButton {
+    position: fixed;
+    float: right;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+@media only screen and (max-width: 414px) {
+  #contactButton {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+#contact {
+  display: none;
+  z-index: 10;
+  position: fixed;
+  overflow: hidden;
+  margin: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 50vw;
+  background-color: #161616;
+}
+
+@media only screen and (max-width: 414px) {
+  #contact {
+    display: none;
+    z-index: 10;
+    position: fixed;
+    overflow: hidden;
+    margin: 0;
+    right: 0;
+    bottom: 0;
+    top: 50vh;
+    height: 50vh;
+    width: 100vw;
+    background-color: #161616;
+  }
+}
+
+.info {
+  display: none;
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  color: #FFD232;
+  top: 35vh;
+}
+
+.info:hover {
+  transform: scale(1.2);
+  color: #48E100;
+}
+
+@media only screen and (max-width: 414px) {
+  .info {
+    font-size: 2rem;
+    top: 7vh;
+  }
+}
+
+#exitContact {
+  display: none;
+  z-index: 11;
+  position: fixed;
+  width: 83px;
+  bottom: 2rem;
+  right: 1.5rem;
+}
+
+#exitContact:hover {
+  cursor: url('img/cursor_yellow.png'), auto;
+}
+
+@media only screen and (max-width: 414px) {
+  #exitContact {
+    transform: scale(0.5);
+    bottom: 0.4rem;
+    right: 0;
+  }
+}
+
+.background {
+  background: url('img/stroke1.png');
+  background-repeat: no-repeat;
+  background-size: 30% auto;
+  position: fixed;
+  width: 100vw;
+  height: 1500px;
+  top: 1600px;
+  left: 50%;
+  z-index: -11;
+}
+
+@media only screen and (max-width: 414px) {
+  .background {
+    width: 100vw;
+    background-size: 60% auto;
+    top: 1600px;
+    left: 30%;
+  }
+}
+
+#portfolio {
+  display: block;
+  position: absolute;
+  width: 70vw;
+  top: 150vh;
+  left: 15vw;
+}
+
+@media only screen and (max-width: 414px) {
+  #portfolio {
+    width: 90vw;
+    top: 150vh;
+    left: 5vw;
+  }
+}
+
+.description{
+  display: inline-block;
+  margin-left: 7rem;
+}
+
+@media only screen and (max-width: 414px) {
+  .description{
+    display: inline-block;
+    margin-left: 1.5rem;
+  }
+}
+
+.desc {
+  font-family: 'Rubik', Helvetica, sans-serif;
+  font-size: 1.125rem;
+  margin-top: 2rem;
+  color: black;
+}
+
+@media only screen and (max-width: 414px) {
+  .desc {
+    font-size: 1rem;
+  }
+}
+
+.projet {
+  height: 30rem;
+  margin-top: 10rem;
+}
+
+.projet:hover h2{
+  color: #CD0000;
+  font-family: 'happy_times_at_the_ikobitalic';
+}
+
+.projet:nth-child(odd) img {
+  width: 30vw;
+  float: left;
+}
+
+@media only screen and (max-width: 414px) {
+  .projet:nth-child(odd) img {
+    width: 80vw;
+    float: none;
+    margin-left: 5vw;
+  }
+}
+
+.projet:nth-child(even) img {
+  width: 30vw;
+  float: right;
+}
+
+@media only screen and (max-width: 414px) {
+  .projet:nth-child(even) img {
+    width: 80vw;
+    float: none;
+    margin-left: 5vw;
+  }
+}
